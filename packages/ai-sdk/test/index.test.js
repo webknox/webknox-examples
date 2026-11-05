@@ -89,6 +89,19 @@ test('a refused request says why', async () => {
   });
 });
 
+test('a refused request reaches the model as a failed tool call', async () => {
+  const {fetch} = stub({error: {code: 'quota_exceeded', message: 'No tokens left today', retry_after_s: 3600}}, 429);
+  const {model, prompts} = modelCallingTool('Weather in Dresden');
+  const result = await generateText({
+    model,
+    prompt: 'Weather in Dresden?',
+    tools: {askWebknox: askWebknox({apiKey: 'k', fetch})},
+    stopWhen: isStepCount(3),
+  });
+  assert.equal(result.text, 'Take a jacket.', 'the model still answers');
+  assert.match(JSON.stringify(prompts[1]), /No tokens left today/);
+});
+
 test('a failure without JSON still gives an error', async () => {
   const fetch = async () => new Response('<html>Bad gateway</html>', {status: 502});
   await assert.rejects(askWebknox({apiKey: 'k', fetch}).execute({question: 'x'}, {}), /WebKnox answered 502/);
