@@ -18,6 +18,21 @@ Most clients take it in a JSON file:
 }
 ```
 
+Cline needs the transport named, or it falls back to the older `sse` one. Add this to `cline_mcp_settings.json`, keeping any servers already there:
+
+```json
+{
+  "mcpServers": {
+    "webknox": {
+      "type": "streamableHttp",
+      "url": "https://mcp.webknox.com/mcp",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+```
+
 In Claude Code:
 
 ```bash
