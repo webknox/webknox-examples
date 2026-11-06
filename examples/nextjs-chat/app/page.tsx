@@ -6,7 +6,7 @@ import type {WebKnoxAnswer} from '@webknox/ai-sdk';
 import {AnswerCard} from './answer-card';
 
 export default function Chat() {
-  const {messages, sendMessage, status} = useChat();
+  const {messages, sendMessage, status, error} = useChat();
   const [input, setInput] = useState('');
   const ask = (text: string) => sendMessage({text});
 
@@ -31,6 +31,7 @@ export default function Chat() {
           })}
         </section>
       ))}
+      {error && <p role="alert" className="error">{error.message}</p>}
       <form onSubmit={submit}>
         <input
           value={input}

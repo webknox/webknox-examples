@@ -57,6 +57,17 @@ export interface AskWebknoxOptions {
 
 export function askWebknox(options?: AskWebknoxOptions): Tool<{question: string}, WebKnoxAnswer>;
 
+export interface RefineRequest {
+  /** What the card answered: its search's query, or the answer's text. */
+  question: string;
+  locale?: string;
+  /** `detail.refine` from the card's `webknox-refine` event. */
+  refine: Record<string, unknown>;
+}
+
+/** Answers a change to a search card straight from the API, without a model turn. Call it from your server. */
+export function refineAnswer(request: RefineRequest, connection?: Pick<AskWebknoxOptions, 'apiKey' | 'baseUrl' | 'fetch'>): Promise<WebKnoxAnswer>;
+
 /** What the model reads of an answer: its text and sources, not the card. */
 export function forModel(answer: WebKnoxAnswer): string;
 

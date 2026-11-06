@@ -1,6 +1,6 @@
 {
   "name": "@webknox/ai-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WebKnox for the AI SDK: a tool that answers everyday questions with sourced UI cards.",
   "keywords": ["webknox", "ai-sdk", "vercel-ai-sdk", "tool", "generative-ui", "cards"],
   "homepage": "https://webknox.com/docs/ai-sdk",

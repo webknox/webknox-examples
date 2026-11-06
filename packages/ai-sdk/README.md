@@ -31,7 +31,19 @@ const element = document.createElement('webknox-answer');
 element.answer = toolResult.output;
 ```
 
-The model reads only the answer's text and sources, and is told the user already sees the card. That keeps a large card out of its context, and it won't read the card back. [The Next.js chat](https://github.com/webknox/webknox-examples/tree/main/examples/nextjs-chat) shows the whole loop.
+The model reads only the answer's text and sources, and is told the user already sees the card. That keeps a large card out of its context, and it won't read the card back.
+
+## Filters on a card
+
+Search cards have filters, sort and "Show more". A change fires `webknox-refine`. Answer it from your server with `refineAnswer`, so the card updates in place without a model turn:
+
+```js
+import {refineAnswer} from '@webknox/ai-sdk';
+
+const answer = await refineAnswer({question, locale, refine});
+```
+
+[The Next.js chat](https://github.com/webknox/webknox-examples/tree/main/examples/nextjs-chat) shows the whole loop.
 
 ## Options
 
@@ -43,7 +55,7 @@ askWebknox({
 });
 ```
 
-`apiKey`, `baseUrl`, `render` (hosted embeds and images, on Pro and Scale) and `fetch` work the same way. A question WebKnox can't answer comes back with `matched: false`, and the model answers it itself. A refused request throws a `WebKnoxError` with `status`, `code` and `retryAfterS`.
+`apiKey`, `baseUrl`, `render` (hosted embeds and images, on Pro and Scale) and `fetch` work the same way. Some models answer from memory rather than call a tool, so tell yours in the system prompt: "Use askWebknox for anything it covers, even in a follow-up." A question WebKnox can't answer comes back with `matched: false`, and the model answers it itself. A refused request throws a `WebKnoxError` with `status`, `code` and `retryAfterS`.
 
 ## License
 

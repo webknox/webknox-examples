@@ -4,10 +4,11 @@ import {z} from 'zod';
 const API = 'https://api.webknox.com';
 
 const DESCRIPTION = [
-  'Answers everyday questions with a sourced card the user sees in the chat: weather, nutrition, recipes, recipe, game and',
-  'artwork searches, comparisons with photos, translations, definitions, conversions, maths, time and timers, sunrise and',
-  'sunset, videos, music and radio, pictures, jokes, quotes and this day in history.',
-  'Call it when the user asks for one of these, and answer anything else yourself.',
+  'Shows the user a sourced card in the chat, from live data: weather, nutrition, single recipes and recipe searches,',
+  'game and artwork searches, comparisons with photos, translations, definitions, conversions, maths, time and timers,',
+  'sunrise and sunset, videos, music and radio, pictures, jokes, quotes and this day in history.',
+  'Call it whenever the user asks for one of these, even if you could answer from memory: real recipes with photos and',
+  'filters beat a recipe you write yourself. Answer anything else yourself.',
 ].join(' ');
 
 const QUESTION = 'The question as one self-contained sentence in the user\'s language that names the place, food or things it is about; a follow-up such as "and tomorrow?" written out as a full question.';
@@ -43,26 +44,38 @@ async function refused(response) {
   });
 }
 
+/** One POST to the Answers API. */
+async function post(body, {apiKey, baseUrl = API, fetch: fetchImpl = globalThis.fetch} = {}, signal) {
+  const key = apiKey ?? globalThis.process?.env?.WEBKNOX_API_KEY;
+  if (!key) throw new WebKnoxError('No API key: set WEBKNOX_API_KEY or pass apiKey. Get one at https://webknox.com/console');
+  const response = await fetchImpl(`${baseUrl}/v2/answers`, {
+    method: 'POST',
+    headers: {Authorization: `Bearer ${key}`, 'Content-Type': 'application/json'},
+    body: JSON.stringify(body),
+    signal,
+  });
+  if (!response.ok) throw await refused(response);
+  return response.json();
+}
+
 /**
  * The WebKnox tool for `generateText`, `streamText` and agents. Its result is the Answers API's answer: hand it to
  * `<webknox-answer>` to show the card.
  */
-export function askWebknox({apiKey, baseUrl = API, locale, context, accept, render, fetch: fetchImpl = globalThis.fetch} = {}) {
+export function askWebknox({locale, context, accept, render, ...connection} = {}) {
   return tool({
     description: DESCRIPTION,
     inputSchema: z.object({question: z.string().trim().min(1).max(1000).describe(QUESTION)}),
-    execute: async ({question}, {abortSignal} = {}) => {
-      const key = apiKey ?? globalThis.process?.env?.WEBKNOX_API_KEY;
-      if (!key) throw new WebKnoxError('No API key: set WEBKNOX_API_KEY or pass apiKey. Get one at https://webknox.com/console');
-      const response = await fetchImpl(`${baseUrl}/v2/answers`, {
-        method: 'POST',
-        headers: {Authorization: `Bearer ${key}`, 'Content-Type': 'application/json'},
-        body: JSON.stringify({messages: [{role: 'user', content: question}], locale, context, accept, render}),
-        signal: abortSignal,
-      });
-      if (!response.ok) throw await refused(response);
-      return response.json();
-    },
+    execute: ({question}, {abortSignal} = {}) =>
+      post({messages: [{role: 'user', content: question}], locale, context, accept, render}, connection, abortSignal),
     toModelOutput: ({output}) => ({type: 'text', value: forModel(output)}),
   });
+}
+
+/**
+ * A change to a search card: `refine` from its `webknox-refine` event, for its filters, sort, more results or one of its
+ * recipes. It goes straight to the API, so the card updates without a model turn. `question` is what the card answered.
+ */
+export function refineAnswer({question, locale, refine}, connection) {
+  return post({messages: [{role: 'user', content: question}], locale, refine}, connection);
 }

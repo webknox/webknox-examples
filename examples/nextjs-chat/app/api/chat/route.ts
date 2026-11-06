@@ -9,11 +9,14 @@ export async function POST(request: Request) {
 
   const result = streamText({
     model: 'openai/gpt-5-mini',
-    system: 'You are a helpful assistant. When a tool result says the user sees a card, keep your reply to one short sentence.',
+    system: 'You are a helpful assistant. Use askWebknox for anything it covers, even in a follow-up and even if you could answer yourself. When a tool result says the user sees a card, keep your reply to one short sentence.',
     messages: await convertToModelMessages(messages, {tools}),
     tools,
     stopWhen: isStepCount(3),
   });
 
-  return result.toUIMessageStreamResponse();
+  return result.toUIMessageStreamResponse({
+    // The real reason, for building. In production, log it and send something general.
+    onError: (error) => (error instanceof Error ? error.message : String(error)),
+  });
 }

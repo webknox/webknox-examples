@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {generateText, isStepCount} from 'ai';
 import {MockLanguageModelV4} from 'ai/test';
-import {askWebknox, forModel, WebKnoxError} from '../src/index.js';
+import {askWebknox, forModel, refineAnswer, WebKnoxError} from '../src/index.js';
 
 const fixture = (name) => JSON.parse(readFileSync(new URL(`fixtures/${name}.json`, import.meta.url))).response;
 const weather = fixture('weather');
@@ -129,4 +129,18 @@ test('the question is one trimmed line the model must fill in', () => {
   assert.equal(inputSchema.parse({question: '  Weather in Rome  '}).question, 'Weather in Rome');
   assert.throws(() => inputSchema.parse({question: '  '}));
   assert.throws(() => inputSchema.parse({question: 'x'.repeat(1001)}));
+});
+
+test('a change to a card goes straight to the API, with what the card answered', async () => {
+  const {calls, fetch} = stub(weather);
+  const refine = {card: 'recipe.search', query: 'chicken pasta', filters: {nutrients: {calories: {min: null, max: 620}}}, sort: 'match', limit: 24};
+  const answer = await refineAnswer({question: 'chicken pasta', locale: 'en', refine}, {apiKey: 'k', fetch});
+  assert.deepEqual(calls[0].body, {messages: [{role: 'user', content: 'chicken pasta'}], locale: 'en', refine});
+  assert.equal(calls[0].init.headers.Authorization, 'Bearer k');
+  assert.deepEqual(answer, weather);
+});
+
+test('a refused change says why, like a refused question', async () => {
+  const {fetch} = stub({error: {code: 'invalid_request', message: 'Unknown card'}}, 400);
+  await assert.rejects(refineAnswer({question: 'x', refine: {}}, {apiKey: 'k', fetch}), (error) => error.code === 'invalid_request');
 });
