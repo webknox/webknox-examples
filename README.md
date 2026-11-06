@@ -31,7 +31,7 @@ WebKnox is also a remote MCP server, so you can add it to Claude, ChatGPT, Claud
 https://mcp.webknox.com/mcp
 ```
 
-No key is needed for 10 answers with a card a day. See [the MCP docs](https://webknox.com/docs/mcp). [`server.json`](server.json) is its entry in the [MCP Registry](https://registry.modelcontextprotocol.io), where it is `com.webknox/webknox`, and [`llms-install.md`](llms-install.md) tells coding agents how to add it.
+No key is needed for 10 answers with a card a day. See [the MCP docs](https://webknox.com/docs/mcp). [`server.json`](server.json) is its entry in the [MCP Registry](https://registry.modelcontextprotocol.io), where it is `com.webknox/webknox`, and [`llms-install.md`](llms-install.md) tells coding agents how to add it. [`.cursor-plugin/`](.cursor-plugin) and [`mcp.json`](mcp.json) make this repo a Cursor plugin.
 
 ## License
 

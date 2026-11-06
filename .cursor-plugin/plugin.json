@@ -1,0 +1,15 @@
+{
+  "name": "webknox",
+  "displayName": "WebKnox",
+  "version": "1.0.0",
+  "description": "Answers everyday questions with visual cards: comparisons with photos, weather, nutrition, recipes, media and more.",
+  "author": {
+    "name": "WebKnox"
+  },
+  "homepage": "https://webknox.com/docs/mcp",
+  "repository": "https://github.com/webknox/webknox-examples",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["webknox", "answers", "weather", "nutrition", "recipes", "comparison", "mcp"],
+  "mcpServers": "./mcp.json"
+}
