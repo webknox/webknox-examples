@@ -13,7 +13,7 @@ import {generateText, isStepCount} from 'ai';
 import {askWebknox} from '@webknox/ai-sdk';
 
 const {text, steps} = await generateText({
-  model: 'openai/gpt-5-mini',
+  model: 'openai/gpt-5.6-luna',
   prompt: 'Do I need an umbrella in Dresden tomorrow?',
   tools: {askWebknox: askWebknox()},
   stopWhen: isStepCount(3),

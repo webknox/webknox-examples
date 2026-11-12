@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   const {messages}: {messages: UIMessage[]} = await request.json();
 
   const result = streamText({
-    model: 'openai/gpt-5-mini',
+    model: 'openai/gpt-5.6-luna',
     system: 'You are a helpful assistant. Use askWebknox for anything it covers, even in a follow-up and even if you could answer yourself. When a tool result says the user sees a card, keep your reply to one short sentence.',
     messages: await convertToModelMessages(messages, {tools}),
     tools,
