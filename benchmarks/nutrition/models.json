@@ -1,0 +1,63 @@
+{
+  "checked": "2026-11-13",
+  "how_chosen": "Each family's top general model as its provider presents it today, picked from the provider's models endpoint (node bench.mjs models) and its model docs. temperature 0 where the API accepts it, otherwise null (the provider's default); reasoning or thinking is left at the provider's default.",
+  "models": [
+    {
+      "name": "gpt-6-astra",
+      "family": "OpenAI GPT",
+      "provider": "openai",
+      "id": "gpt-6-astra",
+      "temperature": null,
+      "settings": "default: the API answers 400 'Only the default (1) value is supported' for temperature 0; default reasoning effort",
+      "why": "OpenAI's models page: \"If you're not sure where to start, use GPT-6 Astra, our flagship model\". gpt-6.1-sol is the cheaper near-Astra tier.",
+      "price": {"input_per_mtok": 10, "output_per_mtok": 50, "source": "https://developers.openai.com/api/docs/pricing", "checked": "2026-11-13"}
+    },
+    {
+      "name": "claude-opus-5-5",
+      "family": "Anthropic Claude",
+      "provider": "anthropic",
+      "id": "claude-opus-5-5",
+      "temperature": null,
+      "settings": "default: the API answers 400 '`temperature` is deprecated for this model'; adaptive thinking (always on) at the default effort; max_tokens 8192",
+      "why": "Anthropic's models overview: \"If you're unsure which model to use, start with Claude Opus 5.5 for most workloads\". Claude Fable 5.2 ($8/$40) is positioned for demanding reasoning and long-horizon agentic work.",
+      "price": {"input_per_mtok": 4, "output_per_mtok": 20, "source": "https://platform.claude.com/docs/en/about-claude/pricing", "checked": "2026-11-13"}
+    },
+    {
+      "name": "gemini-4-carbon",
+      "family": "Google Gemini",
+      "provider": "gemini",
+      "id": "gemini-4-carbon",
+      "temperature": 0,
+      "settings": "temperature 0 (accepted); thinking at the default level",
+      "why": "Google's pricing page: \"Our most capable reasoning model\"; the models page: \"Our strongest reasoning model\". Gemini 4 Argon is the faster, cheaper frontier tier.",
+      "price": {
+        "input_per_mtok": 2,
+        "output_per_mtok": 10,
+        "changes": [{"from": "2026-12-01", "input_per_mtok": 4, "output_per_mtok": 20}],
+        "note": "Output includes thinking tokens. $2/$10 through 2026-11-30, $4/$20 from 2026-12-01.",
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "checked": "2026-11-13"
+      }
+    },
+    {
+      "name": "muse-spark-open",
+      "family": "Meta (Muse; Together AI serves no Llama model serverless any more)",
+      "provider": "together",
+      "id": "meta-models/Muse-Spark-Open-816B-A42B",
+      "temperature": 0,
+      "settings": "temperature 0 (accepted); reasoning at the default (on)",
+      "why": "Meta's largest model on Together AI's serverless API. Llama 4 Maverick and Llama 3.3 70B answer 400 'Unable to access non-serverless model' and need a paid dedicated endpoint.",
+      "price": {"input_per_mtok": 1.25, "output_per_mtok": 4.25, "source": "https://www.together.ai/pricing", "checked": "2026-11-13"}
+    },
+    {
+      "name": "deepseek-v4-pro",
+      "family": "DeepSeek",
+      "provider": "together",
+      "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "temperature": 0,
+      "settings": "temperature 0 (accepted); reasoning at the default (on)",
+      "why": "DeepSeek's Pro tier on Together AI's serverless API; V4.1 Flash is the newer, smaller tier.",
+      "price": {"input_per_mtok": 1.32, "output_per_mtok": 3.96, "source": "https://www.together.ai/pricing", "checked": "2026-11-13"}
+    }
+  ]
+}

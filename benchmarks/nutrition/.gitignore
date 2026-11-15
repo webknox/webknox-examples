@@ -1,0 +1,4 @@
+# USDA downloads (public domain, re-fetched by `node bench.mjs fetch-usda`)
+data/
+# local caches
+.cache/

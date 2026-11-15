@@ -1,0 +1,29 @@
+{"FoundationFoods": [
+  {"fdcId": 100, "dataType": "Foundation", "description": "Kale, raw", "foodCategory": {"description": "Vegetables and Vegetable Products"},
+   "foodNutrients": [
+     {"nutrient": {"id": 2047, "name": "Energy (Atwater General Factors)", "unitName": "kcal"}, "amount": 44},
+     {"nutrient": {"id": 2048, "name": "Energy (Atwater Specific Factors)", "unitName": "kcal"}, "amount": 37},
+     {"nutrient": {"id": 1003, "name": "Protein", "unitName": "g"}, "amount": 2.9},
+     {"nutrient": {"id": 1004, "name": "Total lipid (fat)", "unitName": "g"}, "amount": 1.5},
+     {"nutrient": {"id": 1005, "name": "Carbohydrate, by difference", "unitName": "g"}, "amount": 4.4},
+     {"nutrient": {"id": 1079, "name": "Fiber, total dietary", "unitName": "g"}, "amount": 4.1},
+     {"nutrient": {"id": 1063, "name": "Sugars, Total", "unitName": "g"}, "amount": 0.8},
+     {"nutrient": {"id": 1093, "name": "Sodium, Na", "unitName": "mg"}, "amount": 53}
+   ]},
+  {"fdcId": 101, "dataType": "Foundation", "description": "Lentils, dry", "foodCategory": {"description": "Legumes and Legume Products"},
+   "foodNutrients": [
+     {"nutrient": {"id": 2047, "name": "Energy (Atwater General Factors)", "unitName": "kcal"}, "amount": 360},
+     {"nutrient": {"id": 1003, "name": "Protein", "unitName": "g"}, "amount": 23.6},
+     {"nutrient": {"id": 1004, "name": "Total lipid (fat)", "unitName": "g"}, "amount": 1.9},
+     {"nutrient": {"id": 1005, "name": "Carbohydrate, by difference", "unitName": "g"}, "amount": 62.2},
+     {"nutrient": {"id": 1079, "name": "Fiber, total dietary", "unitName": "g"}, "amount": 10.7},
+     {"nutrient": {"id": 2000, "name": "Total Sugars", "unitName": "g"}, "amount": 2.0},
+     {"nutrient": {"id": 1063, "name": "Sugars, Total", "unitName": "g"}, "amount": 9.9},
+     {"nutrient": {"id": 1093, "name": "Sodium, Na", "unitName": "mg"}, "amount": 6}
+   ]},
+  {"fdcId": 102, "dataType": "Foundation", "description": "Milk, whole", "foodCategory": {"description": "Dairy and Egg Products"},
+   "foodNutrients": [
+     {"nutrient": {"id": 1008, "name": "Energy", "unitName": "kcal"}, "amount": 61},
+     {"nutrient": {"id": 1003, "name": "Protein", "unitName": "g"}, "amount": 3.3}
+   ]}
+]}

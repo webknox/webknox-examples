@@ -1,0 +1,2 @@
+How many calories, and how much protein, fat, carbohydrate, fiber, sugars and sodium, are in {phrase}? Give the amounts for that portion, not per 100 g.
+Answer only with a JSON object with these keys: energy_kcal, protein_g, fat_g, carbohydrate_g, fiber_g, sugars_g, sodium_mg. Each value must be a number, with no units and no other text.

@@ -1,0 +1,2252 @@
+{
+  "scored_at": "2026-11-14T23:42:11.969Z",
+  "set": "everyday",
+  "foods": 20,
+  "rules": {
+    "answers": "up to 5 answers per item: the scored run's answer (at the models file's temperature), then the repeat runs' answers at the provider's default temperature, oldest first",
+    "spread": "(max − min) / min of the calorie answers, in percent; Infinity when the smallest is 0 and another is not",
+    "differs": "spread over 10%, over the items with at least 2 calorie answers",
+    "small_values": "USDA under 10 kcal: answers no more than 5 kcal apart agree (spread 0)",
+    "kcal_within_10_of_usda": "share of all answers within ±10% of USDA under the scoring rules; an answer without calories counts against it"
+  },
+  "models": {
+    "gpt-5.6-luna": {
+      "family": "OpenAI GPT",
+      "id": "gpt-5.6-luna",
+      "provider": "openai",
+      "scored_run_temperature": "default",
+      "repeat_run_temperature": "default",
+      "response_models": [
+        "gpt-5.6-luna"
+      ],
+      "run_dates": [
+        "2026-11-14"
+      ],
+      "runs_wanted": 5,
+      "foods": 20,
+      "foods_with_all_runs": 20,
+      "foods_compared": 20,
+      "answers": 100,
+      "answers_without_kcal": 0,
+      "differ_over_10_pct": 2,
+      "differ_over_10_pct_share": 0.1,
+      "median_spread_pct": 0,
+      "median_spread_infinite": false,
+      "widest": {
+        "phrase": "a slice of store-bought whole-wheat bread",
+        "kcal": [
+          100,
+          100,
+          69,
+          100,
+          100
+        ],
+        "usda_kcal": 80.6,
+        "spread_pct": 44.9,
+        "spread_infinite": false
+      },
+      "kcal_within_10_of_usda_share": 0.85,
+      "items": [
+        {
+          "fdc_id": 173944,
+          "phrase": "a medium banana",
+          "usda_kcal": 105,
+          "runs": 5,
+          "kcal": [
+            105,
+            105,
+            105,
+            105,
+            105
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171688,
+          "phrase": "a medium apple, eaten with the skin",
+          "usda_kcal": 94.6,
+          "runs": 5,
+          "kcal": [
+            95,
+            95,
+            95,
+            95,
+            95
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170093,
+          "phrase": "a medium baked potato, eaten with the skin, no salt added",
+          "usda_kcal": 160.9,
+          "runs": 5,
+          "kcal": [
+            161,
+            161,
+            161,
+            161,
+            161
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170393,
+          "phrase": "a medium raw carrot",
+          "usda_kcal": 25,
+          "runs": 5,
+          "kcal": [
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 168878,
+          "phrase": "a cup of cooked long-grain white rice, cooked without salt",
+          "usda_kcal": 205.4,
+          "runs": 5,
+          "kcal": [
+            205,
+            205,
+            205,
+            205,
+            205
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 172688,
+          "phrase": "a slice of store-bought whole-wheat bread",
+          "usda_kcal": 80.6,
+          "runs": 5,
+          "kcal": [
+            100,
+            100,
+            69,
+            100,
+            100
+          ],
+          "spread_pct": 44.9,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 173905,
+          "phrase": "a cup of oatmeal cooked with water, without salt",
+          "usda_kcal": 166.1,
+          "runs": 5,
+          "kcal": [
+            166,
+            166,
+            166,
+            166,
+            166
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171265,
+          "phrase": "a cup of whole milk",
+          "usda_kcal": 148.8,
+          "runs": 5,
+          "kcal": [
+            149,
+            149,
+            149,
+            149,
+            149
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173424,
+          "phrase": "a large hard-boiled egg",
+          "usda_kcal": 77.5,
+          "runs": 5,
+          "kcal": [
+            78,
+            78,
+            78,
+            78,
+            78
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174266,
+          "phrase": "two tablespoons of smooth peanut butter, salted",
+          "usda_kcal": 191.4,
+          "runs": 5,
+          "kcal": [
+            191,
+            190,
+            190,
+            190,
+            191
+          ],
+          "spread_pct": 0.5,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170567,
+          "phrase": "an ounce of raw almonds (23 whole almonds)",
+          "usda_kcal": 164.1,
+          "runs": 5,
+          "kcal": [
+            164,
+            164,
+            164,
+            164,
+            164
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171413,
+          "phrase": "a tablespoon of olive oil",
+          "usda_kcal": 119.3,
+          "runs": 5,
+          "kcal": [
+            119,
+            119,
+            119,
+            119,
+            119
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171477,
+          "phrase": "a cup of diced roasted chicken breast, skinless",
+          "usda_kcal": 231,
+          "runs": 5,
+          "kcal": [
+            231,
+            231,
+            231,
+            231,
+            231
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 175168,
+          "phrase": "3 oz of baked farmed Atlantic salmon",
+          "usda_kcal": 175.1,
+          "runs": 5,
+          "kcal": [
+            175,
+            175,
+            175,
+            175.1,
+            175
+          ],
+          "spread_pct": 0.1,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174032,
+          "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+          "usda_kcal": 192.5,
+          "runs": 5,
+          "kcal": [
+            284,
+            283,
+            213,
+            284,
+            284
+          ],
+          "spread_pct": 33.3,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 168322,
+          "phrase": "a slice of pan-fried bacon",
+          "usda_kcal": 53.8,
+          "runs": 5,
+          "kcal": [
+            43,
+            43,
+            43,
+            43,
+            43
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 169640,
+          "phrase": "a tablespoon of honey",
+          "usda_kcal": 63.8,
+          "runs": 5,
+          "kcal": [
+            64,
+            64,
+            64,
+            64,
+            64
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174852,
+          "phrase": "a 12 oz can of regular cola (not diet)",
+          "usda_kcal": 155.4,
+          "runs": 5,
+          "kcal": [
+            140,
+            140,
+            140,
+            140,
+            140
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171890,
+          "phrase": "a cup (8 fl oz) of brewed black coffee",
+          "usda_kcal": 2.4,
+          "runs": 5,
+          "kcal": [
+            2.37,
+            2,
+            2,
+            2,
+            2
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": true,
+          "differs": false
+        },
+        {
+          "fdc_id": 169677,
+          "phrase": "an ounce of plain salted potato chips",
+          "usda_kcal": 150.8,
+          "runs": 5,
+          "kcal": [
+            152,
+            152,
+            152,
+            152,
+            150.08
+          ],
+          "spread_pct": 1.3,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        }
+      ],
+      "repeat_usage": {
+        "calls": 80,
+        "input_tokens": 7796,
+        "output_tokens": 23767,
+        "reasoning_tokens": 19037,
+        "reasoning_reported": true,
+        "cost_usd": 0.03008
+      }
+    },
+    "gpt-6-luna": {
+      "family": "OpenAI GPT",
+      "id": "gpt-6-luna",
+      "provider": "openai",
+      "scored_run_temperature": "default",
+      "repeat_run_temperature": "default",
+      "response_models": [
+        "gpt-6-luna"
+      ],
+      "run_dates": [
+        "2026-11-14"
+      ],
+      "runs_wanted": 5,
+      "foods": 20,
+      "foods_with_all_runs": 20,
+      "foods_compared": 20,
+      "answers": 100,
+      "answers_without_kcal": 0,
+      "differ_over_10_pct": 1,
+      "differ_over_10_pct_share": 0.05,
+      "median_spread_pct": 0,
+      "median_spread_infinite": false,
+      "widest": {
+        "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+        "kcal": [
+          283,
+          213,
+          213,
+          213,
+          213
+        ],
+        "usda_kcal": 192.5,
+        "spread_pct": 32.9,
+        "spread_infinite": false
+      },
+      "kcal_within_10_of_usda_share": 0.85,
+      "items": [
+        {
+          "fdc_id": 173944,
+          "phrase": "a medium banana",
+          "usda_kcal": 105,
+          "runs": 5,
+          "kcal": [
+            105,
+            105,
+            105,
+            105,
+            105
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171688,
+          "phrase": "a medium apple, eaten with the skin",
+          "usda_kcal": 94.6,
+          "runs": 5,
+          "kcal": [
+            95,
+            95,
+            95,
+            95,
+            95
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170093,
+          "phrase": "a medium baked potato, eaten with the skin, no salt added",
+          "usda_kcal": 160.9,
+          "runs": 5,
+          "kcal": [
+            161,
+            161,
+            161,
+            161,
+            161
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170393,
+          "phrase": "a medium raw carrot",
+          "usda_kcal": 25,
+          "runs": 5,
+          "kcal": [
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 168878,
+          "phrase": "a cup of cooked long-grain white rice, cooked without salt",
+          "usda_kcal": 205.4,
+          "runs": 5,
+          "kcal": [
+            205,
+            205,
+            205,
+            205,
+            205
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 172688,
+          "phrase": "a slice of store-bought whole-wheat bread",
+          "usda_kcal": 80.6,
+          "runs": 5,
+          "kcal": [
+            69,
+            69,
+            69,
+            70,
+            70
+          ],
+          "spread_pct": 1.4,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173905,
+          "phrase": "a cup of oatmeal cooked with water, without salt",
+          "usda_kcal": 166.1,
+          "runs": 5,
+          "kcal": [
+            166,
+            166,
+            166,
+            166,
+            166
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171265,
+          "phrase": "a cup of whole milk",
+          "usda_kcal": 148.8,
+          "runs": 5,
+          "kcal": [
+            149,
+            149,
+            149,
+            149,
+            149
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173424,
+          "phrase": "a large hard-boiled egg",
+          "usda_kcal": 77.5,
+          "runs": 5,
+          "kcal": [
+            78,
+            78,
+            78,
+            78,
+            78
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174266,
+          "phrase": "two tablespoons of smooth peanut butter, salted",
+          "usda_kcal": 191.4,
+          "runs": 5,
+          "kcal": [
+            190,
+            190,
+            191,
+            191,
+            191.36
+          ],
+          "spread_pct": 0.7,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170567,
+          "phrase": "an ounce of raw almonds (23 whole almonds)",
+          "usda_kcal": 164.1,
+          "runs": 5,
+          "kcal": [
+            164,
+            164,
+            164,
+            164,
+            164
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171413,
+          "phrase": "a tablespoon of olive oil",
+          "usda_kcal": 119.3,
+          "runs": 5,
+          "kcal": [
+            119,
+            119,
+            119,
+            119,
+            119
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171477,
+          "phrase": "a cup of diced roasted chicken breast, skinless",
+          "usda_kcal": 231,
+          "runs": 5,
+          "kcal": [
+            231,
+            231,
+            231,
+            231,
+            231
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 175168,
+          "phrase": "3 oz of baked farmed Atlantic salmon",
+          "usda_kcal": 175.1,
+          "runs": 5,
+          "kcal": [
+            175,
+            175,
+            175,
+            175,
+            175
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174032,
+          "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+          "usda_kcal": 192.5,
+          "runs": 5,
+          "kcal": [
+            283,
+            213,
+            213,
+            213,
+            213
+          ],
+          "spread_pct": 32.9,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 168322,
+          "phrase": "a slice of pan-fried bacon",
+          "usda_kcal": 53.8,
+          "runs": 5,
+          "kcal": [
+            43,
+            43,
+            43,
+            43,
+            43
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 169640,
+          "phrase": "a tablespoon of honey",
+          "usda_kcal": 63.8,
+          "runs": 5,
+          "kcal": [
+            64,
+            64,
+            64,
+            64,
+            64
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174852,
+          "phrase": "a 12 oz can of regular cola (not diet)",
+          "usda_kcal": 155.4,
+          "runs": 5,
+          "kcal": [
+            140,
+            140,
+            140,
+            140,
+            140
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171890,
+          "phrase": "a cup (8 fl oz) of brewed black coffee",
+          "usda_kcal": 2.4,
+          "runs": 5,
+          "kcal": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": true,
+          "differs": false
+        },
+        {
+          "fdc_id": 169677,
+          "phrase": "an ounce of plain salted potato chips",
+          "usda_kcal": 150.8,
+          "runs": 5,
+          "kcal": [
+            152,
+            152,
+            152,
+            152,
+            152
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        }
+      ],
+      "repeat_usage": {
+        "calls": 80,
+        "input_tokens": 7796,
+        "output_tokens": 23570,
+        "reasoning_tokens": 18873,
+        "reasoning_reported": true,
+        "cost_usd": 0.012565
+      }
+    },
+    "claude-haiku-5-5": {
+      "family": "Anthropic Claude",
+      "id": "claude-haiku-5-5",
+      "provider": "anthropic",
+      "scored_run_temperature": "default",
+      "repeat_run_temperature": "default",
+      "response_models": [
+        "claude-haiku-5-5"
+      ],
+      "run_dates": [
+        "2026-11-14"
+      ],
+      "runs_wanted": 5,
+      "foods": 20,
+      "foods_with_all_runs": 20,
+      "foods_compared": 20,
+      "answers": 100,
+      "answers_without_kcal": 0,
+      "differ_over_10_pct": 3,
+      "differ_over_10_pct_share": 0.15,
+      "median_spread_pct": 0,
+      "median_spread_infinite": false,
+      "widest": {
+        "phrase": "a slice of store-bought whole-wheat bread",
+        "kcal": [
+          100,
+          106,
+          100,
+          100,
+          75
+        ],
+        "usda_kcal": 80.6,
+        "spread_pct": 41.3,
+        "spread_infinite": false
+      },
+      "kcal_within_10_of_usda_share": 0.85,
+      "items": [
+        {
+          "fdc_id": 173944,
+          "phrase": "a medium banana",
+          "usda_kcal": 105,
+          "runs": 5,
+          "kcal": [
+            105,
+            105,
+            105,
+            105,
+            105
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171688,
+          "phrase": "a medium apple, eaten with the skin",
+          "usda_kcal": 94.6,
+          "runs": 5,
+          "kcal": [
+            95,
+            95,
+            95,
+            95,
+            95
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170093,
+          "phrase": "a medium baked potato, eaten with the skin, no salt added",
+          "usda_kcal": 160.9,
+          "runs": 5,
+          "kcal": [
+            161,
+            161,
+            161,
+            161,
+            161
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170393,
+          "phrase": "a medium raw carrot",
+          "usda_kcal": 25,
+          "runs": 5,
+          "kcal": [
+            25,
+            25,
+            25,
+            30,
+            25
+          ],
+          "spread_pct": 20,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 168878,
+          "phrase": "a cup of cooked long-grain white rice, cooked without salt",
+          "usda_kcal": 205.4,
+          "runs": 5,
+          "kcal": [
+            205,
+            205,
+            205,
+            205,
+            205
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 172688,
+          "phrase": "a slice of store-bought whole-wheat bread",
+          "usda_kcal": 80.6,
+          "runs": 5,
+          "kcal": [
+            100,
+            106,
+            100,
+            100,
+            75
+          ],
+          "spread_pct": 41.3,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 173905,
+          "phrase": "a cup of oatmeal cooked with water, without salt",
+          "usda_kcal": 166.1,
+          "runs": 5,
+          "kcal": [
+            166,
+            166,
+            166,
+            166,
+            166
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171265,
+          "phrase": "a cup of whole milk",
+          "usda_kcal": 148.8,
+          "runs": 5,
+          "kcal": [
+            149,
+            149,
+            149,
+            149,
+            149
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173424,
+          "phrase": "a large hard-boiled egg",
+          "usda_kcal": 77.5,
+          "runs": 5,
+          "kcal": [
+            78,
+            78,
+            78,
+            78,
+            78
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174266,
+          "phrase": "two tablespoons of smooth peanut butter, salted",
+          "usda_kcal": 191.4,
+          "runs": 5,
+          "kcal": [
+            188,
+            188,
+            188,
+            188,
+            188
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170567,
+          "phrase": "an ounce of raw almonds (23 whole almonds)",
+          "usda_kcal": 164.1,
+          "runs": 5,
+          "kcal": [
+            164,
+            164,
+            164,
+            164,
+            164
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171413,
+          "phrase": "a tablespoon of olive oil",
+          "usda_kcal": 119.3,
+          "runs": 5,
+          "kcal": [
+            119,
+            119,
+            119,
+            119,
+            119
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171477,
+          "phrase": "a cup of diced roasted chicken breast, skinless",
+          "usda_kcal": 231,
+          "runs": 5,
+          "kcal": [
+            231,
+            231,
+            231,
+            231,
+            231
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 175168,
+          "phrase": "3 oz of baked farmed Atlantic salmon",
+          "usda_kcal": 175.1,
+          "runs": 5,
+          "kcal": [
+            175,
+            175,
+            175,
+            175,
+            175
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174032,
+          "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+          "usda_kcal": 192.5,
+          "runs": 5,
+          "kcal": [
+            216,
+            240,
+            225,
+            283,
+            283
+          ],
+          "spread_pct": 31,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 168322,
+          "phrase": "a slice of pan-fried bacon",
+          "usda_kcal": 53.8,
+          "runs": 5,
+          "kcal": [
+            43,
+            43,
+            43,
+            43,
+            43
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 169640,
+          "phrase": "a tablespoon of honey",
+          "usda_kcal": 63.8,
+          "runs": 5,
+          "kcal": [
+            64,
+            64,
+            64,
+            64,
+            64
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174852,
+          "phrase": "a 12 oz can of regular cola (not diet)",
+          "usda_kcal": 155.4,
+          "runs": 5,
+          "kcal": [
+            140,
+            140,
+            140,
+            140,
+            140
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171890,
+          "phrase": "a cup (8 fl oz) of brewed black coffee",
+          "usda_kcal": 2.4,
+          "runs": 5,
+          "kcal": [
+            2,
+            2,
+            2.4,
+            2,
+            2
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": true,
+          "differs": false
+        },
+        {
+          "fdc_id": 169677,
+          "phrase": "an ounce of plain salted potato chips",
+          "usda_kcal": 150.8,
+          "runs": 5,
+          "kcal": [
+            152,
+            152,
+            152,
+            152,
+            152
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        }
+      ],
+      "repeat_usage": {
+        "calls": 80,
+        "input_tokens": 12316,
+        "output_tokens": 33892,
+        "reasoning_tokens": 27210,
+        "reasoning_reported": true,
+        "cost_usd": 0.018178
+      }
+    },
+    "gemini-3.8-flash": {
+      "family": "Google Gemini",
+      "id": "gemini-3.8-flash",
+      "provider": "gemini",
+      "scored_run_temperature": 0,
+      "repeat_run_temperature": "default",
+      "response_models": [
+        "gemini-3.8-flash"
+      ],
+      "run_dates": [
+        "2026-11-14"
+      ],
+      "runs_wanted": 5,
+      "foods": 20,
+      "foods_with_all_runs": 0,
+      "foods_compared": 20,
+      "answers": 60,
+      "answers_without_kcal": 0,
+      "differ_over_10_pct": 1,
+      "differ_over_10_pct_share": 0.05,
+      "median_spread_pct": 0,
+      "median_spread_infinite": false,
+      "widest": {
+        "phrase": "a slice of store-bought whole-wheat bread",
+        "kcal": [
+          81,
+          81,
+          106
+        ],
+        "usda_kcal": 80.6,
+        "spread_pct": 30.9,
+        "spread_infinite": false
+      },
+      "kcal_within_10_of_usda_share": 0.8833,
+      "items": [
+        {
+          "fdc_id": 173944,
+          "phrase": "a medium banana",
+          "usda_kcal": 105,
+          "runs": 3,
+          "kcal": [
+            105,
+            105,
+            105
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171688,
+          "phrase": "a medium apple, eaten with the skin",
+          "usda_kcal": 94.6,
+          "runs": 3,
+          "kcal": [
+            94.6,
+            95,
+            95
+          ],
+          "spread_pct": 0.4,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170093,
+          "phrase": "a medium baked potato, eaten with the skin, no salt added",
+          "usda_kcal": 160.9,
+          "runs": 3,
+          "kcal": [
+            161,
+            161,
+            161
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170393,
+          "phrase": "a medium raw carrot",
+          "usda_kcal": 25,
+          "runs": 3,
+          "kcal": [
+            25,
+            25,
+            25
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 168878,
+          "phrase": "a cup of cooked long-grain white rice, cooked without salt",
+          "usda_kcal": 205.4,
+          "runs": 3,
+          "kcal": [
+            205,
+            205,
+            205
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 172688,
+          "phrase": "a slice of store-bought whole-wheat bread",
+          "usda_kcal": 80.6,
+          "runs": 3,
+          "kcal": [
+            81,
+            81,
+            106
+          ],
+          "spread_pct": 30.9,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 173905,
+          "phrase": "a cup of oatmeal cooked with water, without salt",
+          "usda_kcal": 166.1,
+          "runs": 3,
+          "kcal": [
+            158,
+            166,
+            166
+          ],
+          "spread_pct": 5.1,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171265,
+          "phrase": "a cup of whole milk",
+          "usda_kcal": 148.8,
+          "runs": 3,
+          "kcal": [
+            149,
+            149,
+            149
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173424,
+          "phrase": "a large hard-boiled egg",
+          "usda_kcal": 77.5,
+          "runs": 3,
+          "kcal": [
+            78,
+            78,
+            78
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174266,
+          "phrase": "two tablespoons of smooth peanut butter, salted",
+          "usda_kcal": 191.4,
+          "runs": 3,
+          "kcal": [
+            188,
+            188,
+            188
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170567,
+          "phrase": "an ounce of raw almonds (23 whole almonds)",
+          "usda_kcal": 164.1,
+          "runs": 3,
+          "kcal": [
+            164,
+            164,
+            164
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171413,
+          "phrase": "a tablespoon of olive oil",
+          "usda_kcal": 119.3,
+          "runs": 3,
+          "kcal": [
+            119,
+            119,
+            119
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171477,
+          "phrase": "a cup of diced roasted chicken breast, skinless",
+          "usda_kcal": 231,
+          "runs": 3,
+          "kcal": [
+            231,
+            231,
+            231
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 175168,
+          "phrase": "3 oz of baked farmed Atlantic salmon",
+          "usda_kcal": 175.1,
+          "runs": 3,
+          "kcal": [
+            175,
+            175,
+            175
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174032,
+          "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+          "usda_kcal": 192.5,
+          "runs": 3,
+          "kcal": [
+            213,
+            213,
+            213
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 168322,
+          "phrase": "a slice of pan-fried bacon",
+          "usda_kcal": 53.8,
+          "runs": 3,
+          "kcal": [
+            43,
+            43,
+            44
+          ],
+          "spread_pct": 2.3,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 169640,
+          "phrase": "a tablespoon of honey",
+          "usda_kcal": 63.8,
+          "runs": 3,
+          "kcal": [
+            64,
+            64,
+            64
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174852,
+          "phrase": "a 12 oz can of regular cola (not diet)",
+          "usda_kcal": 155.4,
+          "runs": 3,
+          "kcal": [
+            140,
+            140,
+            140
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171890,
+          "phrase": "a cup (8 fl oz) of brewed black coffee",
+          "usda_kcal": 2.4,
+          "runs": 3,
+          "kcal": [
+            2.4,
+            2.37,
+            2.37
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": true,
+          "differs": false
+        },
+        {
+          "fdc_id": 169677,
+          "phrase": "an ounce of plain salted potato chips",
+          "usda_kcal": 150.8,
+          "runs": 3,
+          "kcal": [
+            152,
+            152,
+            152
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        }
+      ],
+      "repeat_usage": {
+        "calls": 40,
+        "input_tokens": 4022,
+        "output_tokens": 48270,
+        "reasoning_tokens": 44634,
+        "reasoning_reported": true,
+        "cost_usd": 0.184029
+      }
+    },
+    "muse-glimmer-30b": {
+      "family": "Meta (Muse)",
+      "id": "meta-models/Muse-Glimmer-30B",
+      "provider": "together",
+      "scored_run_temperature": 0,
+      "repeat_run_temperature": "default",
+      "response_models": [
+        "meta-models/Muse-Glimmer-30B"
+      ],
+      "run_dates": [
+        "2026-11-14"
+      ],
+      "runs_wanted": 5,
+      "foods": 20,
+      "foods_with_all_runs": 0,
+      "foods_compared": 20,
+      "answers": 60,
+      "answers_without_kcal": 0,
+      "differ_over_10_pct": 3,
+      "differ_over_10_pct_share": 0.15,
+      "median_spread_pct": 0,
+      "median_spread_infinite": false,
+      "widest": {
+        "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+        "kcal": [
+          230,
+          288,
+          288
+        ],
+        "usda_kcal": 192.5,
+        "spread_pct": 25.2,
+        "spread_infinite": false
+      },
+      "kcal_within_10_of_usda_share": 0.8333,
+      "items": [
+        {
+          "fdc_id": 173944,
+          "phrase": "a medium banana",
+          "usda_kcal": 105,
+          "runs": 3,
+          "kcal": [
+            105,
+            105,
+            105
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171688,
+          "phrase": "a medium apple, eaten with the skin",
+          "usda_kcal": 94.6,
+          "runs": 3,
+          "kcal": [
+            95,
+            95,
+            95
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170093,
+          "phrase": "a medium baked potato, eaten with the skin, no salt added",
+          "usda_kcal": 160.9,
+          "runs": 3,
+          "kcal": [
+            161,
+            161,
+            161
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170393,
+          "phrase": "a medium raw carrot",
+          "usda_kcal": 25,
+          "runs": 3,
+          "kcal": [
+            25,
+            25,
+            25
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 168878,
+          "phrase": "a cup of cooked long-grain white rice, cooked without salt",
+          "usda_kcal": 205.4,
+          "runs": 3,
+          "kcal": [
+            205,
+            205,
+            204
+          ],
+          "spread_pct": 0.5,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 172688,
+          "phrase": "a slice of store-bought whole-wheat bread",
+          "usda_kcal": 80.6,
+          "runs": 3,
+          "kcal": [
+            90,
+            90,
+            80
+          ],
+          "spread_pct": 12.5,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 173905,
+          "phrase": "a cup of oatmeal cooked with water, without salt",
+          "usda_kcal": 166.1,
+          "runs": 3,
+          "kcal": [
+            166,
+            166,
+            166
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171265,
+          "phrase": "a cup of whole milk",
+          "usda_kcal": 148.8,
+          "runs": 3,
+          "kcal": [
+            149,
+            149,
+            149
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173424,
+          "phrase": "a large hard-boiled egg",
+          "usda_kcal": 77.5,
+          "runs": 3,
+          "kcal": [
+            78,
+            78,
+            78
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174266,
+          "phrase": "two tablespoons of smooth peanut butter, salted",
+          "usda_kcal": 191.4,
+          "runs": 3,
+          "kcal": [
+            190,
+            190,
+            190
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170567,
+          "phrase": "an ounce of raw almonds (23 whole almonds)",
+          "usda_kcal": 164.1,
+          "runs": 3,
+          "kcal": [
+            164,
+            164,
+            164
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171413,
+          "phrase": "a tablespoon of olive oil",
+          "usda_kcal": 119.3,
+          "runs": 3,
+          "kcal": [
+            119,
+            119,
+            119
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171477,
+          "phrase": "a cup of diced roasted chicken breast, skinless",
+          "usda_kcal": 231,
+          "runs": 3,
+          "kcal": [
+            231,
+            281,
+            269
+          ],
+          "spread_pct": 21.6,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 175168,
+          "phrase": "3 oz of baked farmed Atlantic salmon",
+          "usda_kcal": 175.1,
+          "runs": 3,
+          "kcal": [
+            175,
+            175,
+            175
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174032,
+          "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+          "usda_kcal": 192.5,
+          "runs": 3,
+          "kcal": [
+            230,
+            288,
+            288
+          ],
+          "spread_pct": 25.2,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": true
+        },
+        {
+          "fdc_id": 168322,
+          "phrase": "a slice of pan-fried bacon",
+          "usda_kcal": 53.8,
+          "runs": 3,
+          "kcal": [
+            42,
+            42,
+            42
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 169640,
+          "phrase": "a tablespoon of honey",
+          "usda_kcal": 63.8,
+          "runs": 3,
+          "kcal": [
+            64,
+            64,
+            64
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174852,
+          "phrase": "a 12 oz can of regular cola (not diet)",
+          "usda_kcal": 155.4,
+          "runs": 3,
+          "kcal": [
+            140,
+            140,
+            140
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171890,
+          "phrase": "a cup (8 fl oz) of brewed black coffee",
+          "usda_kcal": 2.4,
+          "runs": 3,
+          "kcal": [
+            2,
+            2,
+            2
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": true,
+          "differs": false
+        },
+        {
+          "fdc_id": 169677,
+          "phrase": "an ounce of plain salted potato chips",
+          "usda_kcal": 150.8,
+          "runs": 3,
+          "kcal": [
+            152,
+            160,
+            160
+          ],
+          "spread_pct": 5.3,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        }
+      ],
+      "repeat_usage": {
+        "calls": 40,
+        "input_tokens": 5904,
+        "output_tokens": 67410,
+        "reasoning_tokens": 0,
+        "reasoning_reported": false,
+        "cost_usd": 0.103181
+      }
+    },
+    "deepseek-v4.1-flash": {
+      "family": "DeepSeek",
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "provider": "together",
+      "scored_run_temperature": 0,
+      "repeat_run_temperature": "default",
+      "response_models": [
+        "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      ],
+      "run_dates": [
+        "2026-11-14"
+      ],
+      "runs_wanted": 5,
+      "foods": 20,
+      "foods_with_all_runs": 20,
+      "foods_compared": 20,
+      "answers": 100,
+      "answers_without_kcal": 0,
+      "differ_over_10_pct": 0,
+      "differ_over_10_pct_share": 0,
+      "median_spread_pct": 0,
+      "median_spread_infinite": false,
+      "widest": {
+        "phrase": "two tablespoons of smooth peanut butter, salted",
+        "kcal": [
+          188.2,
+          188.16,
+          191.36,
+          191.36,
+          191.36
+        ],
+        "usda_kcal": 191.4,
+        "spread_pct": 1.7,
+        "spread_infinite": false
+      },
+      "kcal_within_10_of_usda_share": 0.85,
+      "items": [
+        {
+          "fdc_id": 173944,
+          "phrase": "a medium banana",
+          "usda_kcal": 105,
+          "runs": 5,
+          "kcal": [
+            105,
+            105,
+            105,
+            105,
+            105
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171688,
+          "phrase": "a medium apple, eaten with the skin",
+          "usda_kcal": 94.6,
+          "runs": 5,
+          "kcal": [
+            95,
+            95,
+            95,
+            95,
+            95
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170093,
+          "phrase": "a medium baked potato, eaten with the skin, no salt added",
+          "usda_kcal": 160.9,
+          "runs": 5,
+          "kcal": [
+            161,
+            161,
+            161,
+            161,
+            161
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170393,
+          "phrase": "a medium raw carrot",
+          "usda_kcal": 25,
+          "runs": 5,
+          "kcal": [
+            25.01,
+            25,
+            25,
+            25,
+            25
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 168878,
+          "phrase": "a cup of cooked long-grain white rice, cooked without salt",
+          "usda_kcal": 205.4,
+          "runs": 5,
+          "kcal": [
+            205,
+            205,
+            205.4,
+            205,
+            205
+          ],
+          "spread_pct": 0.2,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 172688,
+          "phrase": "a slice of store-bought whole-wheat bread",
+          "usda_kcal": 80.6,
+          "runs": 5,
+          "kcal": [
+            70.6,
+            70.6,
+            70,
+            70.56,
+            71
+          ],
+          "spread_pct": 1.4,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173905,
+          "phrase": "a cup of oatmeal cooked with water, without salt",
+          "usda_kcal": 166.1,
+          "runs": 5,
+          "kcal": [
+            166,
+            166,
+            166,
+            166,
+            166
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171265,
+          "phrase": "a cup of whole milk",
+          "usda_kcal": 148.8,
+          "runs": 5,
+          "kcal": [
+            149,
+            149,
+            149,
+            149,
+            149
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 173424,
+          "phrase": "a large hard-boiled egg",
+          "usda_kcal": 77.5,
+          "runs": 5,
+          "kcal": [
+            78,
+            78,
+            78,
+            78,
+            78
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174266,
+          "phrase": "two tablespoons of smooth peanut butter, salted",
+          "usda_kcal": 191.4,
+          "runs": 5,
+          "kcal": [
+            188.2,
+            188.16,
+            191.36,
+            191.36,
+            191.36
+          ],
+          "spread_pct": 1.7,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 170567,
+          "phrase": "an ounce of raw almonds (23 whole almonds)",
+          "usda_kcal": 164.1,
+          "runs": 5,
+          "kcal": [
+            164.15,
+            164,
+            164,
+            164.15,
+            164
+          ],
+          "spread_pct": 0.1,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171413,
+          "phrase": "a tablespoon of olive oil",
+          "usda_kcal": 119.3,
+          "runs": 5,
+          "kcal": [
+            119,
+            119,
+            119.34,
+            119,
+            119
+          ],
+          "spread_pct": 0.3,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171477,
+          "phrase": "a cup of diced roasted chicken breast, skinless",
+          "usda_kcal": 231,
+          "runs": 5,
+          "kcal": [
+            231,
+            231,
+            231,
+            231,
+            231
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 175168,
+          "phrase": "3 oz of baked farmed Atlantic salmon",
+          "usda_kcal": 175.1,
+          "runs": 5,
+          "kcal": [
+            175.2,
+            175.1,
+            175.1,
+            175.1,
+            175.1
+          ],
+          "spread_pct": 0.1,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174032,
+          "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+          "usda_kcal": 192.5,
+          "runs": 5,
+          "kcal": [
+            212.5,
+            212.5,
+            213,
+            212.5,
+            212.5
+          ],
+          "spread_pct": 0.2,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 168322,
+          "phrase": "a slice of pan-fried bacon",
+          "usda_kcal": 53.8,
+          "runs": 5,
+          "kcal": [
+            43.8,
+            43.28,
+            44,
+            43.8,
+            43.8
+          ],
+          "spread_pct": 1.7,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 169640,
+          "phrase": "a tablespoon of honey",
+          "usda_kcal": 63.8,
+          "runs": 5,
+          "kcal": [
+            64,
+            64,
+            63.84,
+            63.84,
+            64
+          ],
+          "spread_pct": 0.3,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 174852,
+          "phrase": "a 12 oz can of regular cola (not diet)",
+          "usda_kcal": 155.4,
+          "runs": 5,
+          "kcal": [
+            140,
+            140,
+            140,
+            140,
+            140
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        },
+        {
+          "fdc_id": 171890,
+          "phrase": "a cup (8 fl oz) of brewed black coffee",
+          "usda_kcal": 2.4,
+          "runs": 5,
+          "kcal": [
+            2,
+            2.37,
+            2,
+            2,
+            2.37
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": true,
+          "differs": false
+        },
+        {
+          "fdc_id": 169677,
+          "phrase": "an ounce of plain salted potato chips",
+          "usda_kcal": 150.8,
+          "runs": 5,
+          "kcal": [
+            152,
+            152,
+            152,
+            152,
+            151.95
+          ],
+          "spread_pct": 0,
+          "spread_infinite": false,
+          "small_value_rule_applied": false,
+          "differs": false
+        }
+      ],
+      "repeat_usage": {
+        "calls": 80,
+        "input_tokens": 9724,
+        "output_tokens": 89010,
+        "reasoning_tokens": 84602,
+        "reasoning_reported": true,
+        "cost_usd": 0.109729
+      }
+    }
+  }
+}

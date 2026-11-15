@@ -1,0 +1,57 @@
+{
+  "downloaded_at": "2026-11-13T00:08:12.579Z",
+  "source": "https://fdc.nal.usda.gov/download-datasets/",
+  "datasets": [
+    {
+      "dataset": "foundation",
+      "name": "Foundation Foods",
+      "release": "2026-10-29",
+      "release_label": "October 2026",
+      "format": "json",
+      "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_json_2026-10-29.zip",
+      "zip": "FoodData_Central_foundation_food_json_2026-10-29.zip",
+      "zip_bytes": 696866,
+      "zip_sha256": "dd414cc9f1a132626bad354ef6655972c78b44aff14f16114dc899708663c579",
+      "last_modified": "Wed, 28 Oct 2026 18:45:16 GMT",
+      "dir": "foundation",
+      "files": [
+        {
+          "file": "FoodData_Central_foundation_food_json_2026-10-29.json",
+          "bytes": 9349340
+        }
+      ],
+      "note": "The CSV zip of this release (FoodData_Central_foundation_food_csv_2026-10-29.zip, 1,127,612 bytes) has no food.csv or food_nutrient.csv, so the JSON zip of the same release is used."
+    },
+    {
+      "dataset": "sr_legacy",
+      "name": "SR Legacy",
+      "release": "2018-04",
+      "release_label": "April 2018 (final)",
+      "format": "csv",
+      "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_2018-04.zip",
+      "zip": "FoodData_Central_sr_legacy_food_csv_2018-04.zip",
+      "zip_bytes": 6074592,
+      "zip_sha256": "b80817294b8850530aaedf2e515c02593b1824f763a0ff356e5c2081643e6fd0",
+      "last_modified": "Wed, 25 Oct 2023 21:38:51 GMT",
+      "dir": "sr_legacy/FoodData_Central_sr_legacy_food_csv_2018-04",
+      "files": [
+        {
+          "file": "food.csv",
+          "bytes": 793104
+        },
+        {
+          "file": "food_nutrient.csv",
+          "bytes": 36366059
+        },
+        {
+          "file": "nutrient.csv",
+          "bytes": 21464
+        },
+        {
+          "file": "food_category.csv",
+          "bytes": 997
+        }
+      ]
+    }
+  ]
+}

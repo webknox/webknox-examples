@@ -1,0 +1,624 @@
+{
+  "items": [
+    {
+      "phrase": "a medium banana",
+      "fdc_id": 173944,
+      "sr_description": "Bananas, raw",
+      "category": "Fruits and Fruit Juices",
+      "portion": {
+        "id": 93515,
+        "amount": 1,
+        "modifier": "medium (7\" to 7-7/8\" long)",
+        "gram_weight": 118
+      },
+      "grams": 118,
+      "per_100g": {
+        "energy_kcal": 89,
+        "protein_g": 1.09,
+        "fat_g": 0.33,
+        "carbohydrate_g": 22.84,
+        "fiber_g": 2.6,
+        "sugars_g": 12.23,
+        "sodium_mg": 1
+      },
+      "usda": {
+        "energy_kcal": 105.02,
+        "protein_g": 1.286,
+        "fat_g": 0.389,
+        "carbohydrate_g": 26.951,
+        "fiber_g": 3.068,
+        "sugars_g": 14.431,
+        "sodium_mg": 1.18
+      }
+    },
+    {
+      "phrase": "a medium apple, eaten with the skin",
+      "fdc_id": 171688,
+      "sr_description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+      "category": "Fruits and Fruit Juices",
+      "portion": {
+        "id": 89193,
+        "amount": 1,
+        "modifier": "medium (3\" dia)",
+        "gram_weight": 182
+      },
+      "grams": 182,
+      "per_100g": {
+        "energy_kcal": 52,
+        "protein_g": 0.26,
+        "fat_g": 0.17,
+        "carbohydrate_g": 13.81,
+        "fiber_g": 2.4,
+        "sugars_g": 10.39,
+        "sodium_mg": 1
+      },
+      "usda": {
+        "energy_kcal": 94.64,
+        "protein_g": 0.473,
+        "fat_g": 0.309,
+        "carbohydrate_g": 25.134,
+        "fiber_g": 4.368,
+        "sugars_g": 18.91,
+        "sodium_mg": 1.82
+      }
+    },
+    {
+      "phrase": "a medium baked potato, eaten with the skin, no salt added",
+      "fdc_id": 170093,
+      "sr_description": "Potatoes, baked, flesh and skin, without salt",
+      "category": "Vegetables and Vegetable Products",
+      "portion": {
+        "id": 86029,
+        "amount": 1,
+        "modifier": "potato medium",
+        "gram_weight": 173
+      },
+      "grams": 173,
+      "per_100g": {
+        "energy_kcal": 93,
+        "protein_g": 2.5,
+        "fat_g": 0.13,
+        "carbohydrate_g": 21.15,
+        "fiber_g": 2.2,
+        "sugars_g": 1.18,
+        "sodium_mg": 10
+      },
+      "usda": {
+        "energy_kcal": 160.89,
+        "protein_g": 4.325,
+        "fat_g": 0.225,
+        "carbohydrate_g": 36.59,
+        "fiber_g": 3.806,
+        "sugars_g": 2.041,
+        "sodium_mg": 17.3
+      }
+    },
+    {
+      "phrase": "a medium raw carrot",
+      "fdc_id": 170393,
+      "sr_description": "Carrots, raw",
+      "category": "Vegetables and Vegetable Products",
+      "portion": {
+        "id": 86559,
+        "amount": 1,
+        "modifier": "medium",
+        "gram_weight": 61
+      },
+      "grams": 61,
+      "per_100g": {
+        "energy_kcal": 41,
+        "protein_g": 0.93,
+        "fat_g": 0.24,
+        "carbohydrate_g": 9.58,
+        "fiber_g": 2.8,
+        "sugars_g": 4.74,
+        "sodium_mg": 69
+      },
+      "usda": {
+        "energy_kcal": 25.01,
+        "protein_g": 0.567,
+        "fat_g": 0.146,
+        "carbohydrate_g": 5.844,
+        "fiber_g": 1.708,
+        "sugars_g": 2.891,
+        "sodium_mg": 42.09
+      }
+    },
+    {
+      "phrase": "a cup of cooked long-grain white rice, cooked without salt",
+      "fdc_id": 168878,
+      "sr_description": "Rice, white, long-grain, regular, enriched, cooked",
+      "category": "Cereal Grains and Pasta",
+      "portion": {
+        "id": 83928,
+        "amount": 1,
+        "modifier": "cup",
+        "gram_weight": 158
+      },
+      "grams": 158,
+      "per_100g": {
+        "energy_kcal": 130,
+        "protein_g": 2.69,
+        "fat_g": 0.28,
+        "carbohydrate_g": 28.17,
+        "fiber_g": 0.4,
+        "sugars_g": 0.05,
+        "sodium_mg": 1
+      },
+      "usda": {
+        "energy_kcal": 205.4,
+        "protein_g": 4.25,
+        "fat_g": 0.442,
+        "carbohydrate_g": 44.509,
+        "fiber_g": 0.632,
+        "sugars_g": 0.079,
+        "sodium_mg": 1.58
+      }
+    },
+    {
+      "phrase": "a slice of store-bought whole-wheat bread",
+      "fdc_id": 172688,
+      "sr_description": "Bread, whole-wheat, commercially prepared",
+      "category": "Baked Products",
+      "portion": {
+        "id": 91108,
+        "amount": 1,
+        "modifier": "slice",
+        "gram_weight": 32
+      },
+      "grams": 32,
+      "per_100g": {
+        "energy_kcal": 252,
+        "protein_g": 12.45,
+        "fat_g": 3.5,
+        "carbohydrate_g": 42.71,
+        "fiber_g": 6,
+        "sugars_g": 4.34,
+        "sodium_mg": 455
+      },
+      "usda": {
+        "energy_kcal": 80.64,
+        "protein_g": 3.984,
+        "fat_g": 1.12,
+        "carbohydrate_g": 13.667,
+        "fiber_g": 1.92,
+        "sugars_g": 1.389,
+        "sodium_mg": 145.6
+      }
+    },
+    {
+      "phrase": "a cup of oatmeal cooked with water, without salt",
+      "fdc_id": 173905,
+      "sr_description": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+      "category": "Breakfast Cereals",
+      "portion": {
+        "id": 93456,
+        "amount": 1,
+        "modifier": "cup",
+        "gram_weight": 234
+      },
+      "grams": 234,
+      "per_100g": {
+        "energy_kcal": 71,
+        "protein_g": 2.54,
+        "fat_g": 1.52,
+        "carbohydrate_g": 12,
+        "fiber_g": 1.7,
+        "sugars_g": 0.27,
+        "sodium_mg": 4
+      },
+      "usda": {
+        "energy_kcal": 166.14,
+        "protein_g": 5.944,
+        "fat_g": 3.557,
+        "carbohydrate_g": 28.08,
+        "fiber_g": 3.978,
+        "sugars_g": 0.632,
+        "sodium_mg": 9.36
+      }
+    },
+    {
+      "phrase": "a cup of whole milk",
+      "fdc_id": 171265,
+      "sr_description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+      "category": "Dairy and Egg Products",
+      "portion": {
+        "id": 88314,
+        "amount": 1,
+        "modifier": "cup",
+        "gram_weight": 244
+      },
+      "grams": 244,
+      "per_100g": {
+        "energy_kcal": 61,
+        "protein_g": 3.15,
+        "fat_g": 3.25,
+        "carbohydrate_g": 4.8,
+        "fiber_g": 0,
+        "sugars_g": 5.05,
+        "sodium_mg": 43
+      },
+      "usda": {
+        "energy_kcal": 148.84,
+        "protein_g": 7.686,
+        "fat_g": 7.93,
+        "carbohydrate_g": 11.712,
+        "fiber_g": 0,
+        "sugars_g": 12.322,
+        "sodium_mg": 104.92
+      }
+    },
+    {
+      "phrase": "a large hard-boiled egg",
+      "fdc_id": 173424,
+      "sr_description": "Egg, whole, cooked, hard-boiled",
+      "category": "Dairy and Egg Products",
+      "portion": {
+        "id": 92500,
+        "amount": 1,
+        "modifier": "large",
+        "gram_weight": 50
+      },
+      "grams": 50,
+      "per_100g": {
+        "energy_kcal": 155,
+        "protein_g": 12.58,
+        "fat_g": 10.61,
+        "carbohydrate_g": 1.12,
+        "fiber_g": 0,
+        "sugars_g": 1.12,
+        "sodium_mg": 124
+      },
+      "usda": {
+        "energy_kcal": 77.5,
+        "protein_g": 6.29,
+        "fat_g": 5.305,
+        "carbohydrate_g": 0.56,
+        "fiber_g": 0,
+        "sugars_g": 0.56,
+        "sodium_mg": 62
+      }
+    },
+    {
+      "phrase": "two tablespoons of smooth peanut butter, salted",
+      "fdc_id": 174266,
+      "sr_description": "Peanut butter, smooth style, with salt (Includes foods for USDA's Food Distribution Program)",
+      "category": "Legumes and Legume Products",
+      "portion": {
+        "id": 94049,
+        "amount": 2,
+        "modifier": "tbsp",
+        "gram_weight": 32
+      },
+      "grams": 32,
+      "per_100g": {
+        "energy_kcal": 598,
+        "protein_g": 22.21,
+        "fat_g": 51.36,
+        "carbohydrate_g": 22.31,
+        "fiber_g": 5,
+        "sugars_g": 10.49,
+        "sodium_mg": 426
+      },
+      "usda": {
+        "energy_kcal": 191.36,
+        "protein_g": 7.107,
+        "fat_g": 16.435,
+        "carbohydrate_g": 7.139,
+        "fiber_g": 1.6,
+        "sugars_g": 3.357,
+        "sodium_mg": 136.32
+      }
+    },
+    {
+      "phrase": "an ounce of raw almonds (23 whole almonds)",
+      "fdc_id": 170567,
+      "sr_description": "Nuts, almonds",
+      "category": "Nut and Seed Products",
+      "portion": {
+        "id": 86867,
+        "amount": 1,
+        "modifier": "oz (23 whole kernels)",
+        "gram_weight": 28.35
+      },
+      "grams": 28.35,
+      "per_100g": {
+        "energy_kcal": 579,
+        "protein_g": 21.15,
+        "fat_g": 49.93,
+        "carbohydrate_g": 21.55,
+        "fiber_g": 12.5,
+        "sugars_g": 4.35,
+        "sodium_mg": 1
+      },
+      "usda": {
+        "energy_kcal": 164.147,
+        "protein_g": 5.996,
+        "fat_g": 14.155,
+        "carbohydrate_g": 6.109,
+        "fiber_g": 3.544,
+        "sugars_g": 1.233,
+        "sodium_mg": 0.284
+      }
+    },
+    {
+      "phrase": "a tablespoon of olive oil",
+      "fdc_id": 171413,
+      "sr_description": "Oil, olive, salad or cooking",
+      "category": "Fats and Oils",
+      "portion": {
+        "id": 88667,
+        "amount": 1,
+        "modifier": "tablespoon",
+        "gram_weight": 13.5
+      },
+      "grams": 13.5,
+      "per_100g": {
+        "energy_kcal": 884,
+        "protein_g": 0,
+        "fat_g": 100,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 2
+      },
+      "usda": {
+        "energy_kcal": 119.34,
+        "protein_g": 0,
+        "fat_g": 13.5,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 0.27
+      }
+    },
+    {
+      "phrase": "a cup of diced roasted chicken breast, skinless",
+      "fdc_id": 171477,
+      "sr_description": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+      "category": "Poultry Products",
+      "portion": {
+        "id": 88817,
+        "amount": 1,
+        "modifier": "cup, chopped or diced",
+        "gram_weight": 140
+      },
+      "grams": 140,
+      "per_100g": {
+        "energy_kcal": 165,
+        "protein_g": 31.02,
+        "fat_g": 3.57,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 74
+      },
+      "usda": {
+        "energy_kcal": 231,
+        "protein_g": 43.428,
+        "fat_g": 4.998,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 103.6
+      }
+    },
+    {
+      "phrase": "3 oz of baked farmed Atlantic salmon",
+      "fdc_id": 175168,
+      "sr_description": "Fish, salmon, Atlantic, farmed, cooked, dry heat",
+      "category": "Finfish and Shellfish Products",
+      "portion": {
+        "id": 95788,
+        "amount": 3,
+        "modifier": "oz",
+        "gram_weight": 85
+      },
+      "grams": 85,
+      "per_100g": {
+        "energy_kcal": 206,
+        "protein_g": 22.1,
+        "fat_g": 12.35,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 61
+      },
+      "usda": {
+        "energy_kcal": 175.1,
+        "protein_g": 18.785,
+        "fat_g": 10.498,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 51.85
+      }
+    },
+    {
+      "phrase": "a broiled quarter-pound burger patty made from 85% lean ground beef",
+      "fdc_id": 174032,
+      "sr_description": "Beef, ground, 85% lean meat / 15% fat, patty, cooked, broiled",
+      "category": "Beef Products",
+      "portion": {
+        "id": 93666,
+        "amount": 1,
+        "modifier": "patty (yield from 1/4 lb raw meat)",
+        "gram_weight": 77
+      },
+      "grams": 77,
+      "per_100g": {
+        "energy_kcal": 250,
+        "protein_g": 25.93,
+        "fat_g": 15.41,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 72
+      },
+      "usda": {
+        "energy_kcal": 192.5,
+        "protein_g": 19.966,
+        "fat_g": 11.866,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 55.44
+      }
+    },
+    {
+      "phrase": "a slice of pan-fried bacon",
+      "fdc_id": 168322,
+      "sr_description": "Pork, cured, bacon, pre-sliced, cooked, pan-fried",
+      "category": "Pork Products",
+      "portion": {
+        "id": 82891,
+        "amount": 1,
+        "modifier": "slice",
+        "gram_weight": 11.5
+      },
+      "grams": 11.5,
+      "per_100g": {
+        "energy_kcal": 468,
+        "protein_g": 33.92,
+        "fat_g": 35.09,
+        "carbohydrate_g": 1.7,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 1684
+      },
+      "usda": {
+        "energy_kcal": 53.82,
+        "protein_g": 3.901,
+        "fat_g": 4.035,
+        "carbohydrate_g": 0.196,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 193.66
+      }
+    },
+    {
+      "phrase": "a tablespoon of honey",
+      "fdc_id": 169640,
+      "sr_description": "Honey",
+      "category": "Sweets",
+      "portion": {
+        "id": 85265,
+        "amount": 1,
+        "modifier": "tbsp",
+        "gram_weight": 21
+      },
+      "grams": 21,
+      "per_100g": {
+        "energy_kcal": 304,
+        "protein_g": 0.3,
+        "fat_g": 0,
+        "carbohydrate_g": 82.4,
+        "fiber_g": 0.2,
+        "sugars_g": 82.12,
+        "sodium_mg": 4
+      },
+      "usda": {
+        "energy_kcal": 63.84,
+        "protein_g": 0.063,
+        "fat_g": 0,
+        "carbohydrate_g": 17.304,
+        "fiber_g": 0.042,
+        "sugars_g": 17.245,
+        "sodium_mg": 0.84
+      }
+    },
+    {
+      "phrase": "a 12 oz can of regular cola (not diet)",
+      "fdc_id": 174852,
+      "sr_description": "Beverages, carbonated, cola, regular",
+      "category": "Beverages",
+      "portion": {
+        "id": 95017,
+        "amount": 1,
+        "modifier": "can or bottle (12 fl oz)",
+        "gram_weight": 370
+      },
+      "grams": 370,
+      "per_100g": {
+        "energy_kcal": 42,
+        "protein_g": 0,
+        "fat_g": 0.25,
+        "carbohydrate_g": 10.36,
+        "fiber_g": 0,
+        "sugars_g": 9.94,
+        "sodium_mg": 3
+      },
+      "usda": {
+        "energy_kcal": 155.4,
+        "protein_g": 0,
+        "fat_g": 0.925,
+        "carbohydrate_g": 38.332,
+        "fiber_g": 0,
+        "sugars_g": 36.778,
+        "sodium_mg": 11.1
+      }
+    },
+    {
+      "phrase": "a cup (8 fl oz) of brewed black coffee",
+      "fdc_id": 171890,
+      "sr_description": "Beverages, coffee, brewed, prepared with tap water",
+      "category": "Beverages",
+      "portion": {
+        "id": 89520,
+        "amount": 1,
+        "modifier": "cup (8 fl oz)",
+        "gram_weight": 237
+      },
+      "grams": 237,
+      "per_100g": {
+        "energy_kcal": 1,
+        "protein_g": 0.12,
+        "fat_g": 0.02,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 2
+      },
+      "usda": {
+        "energy_kcal": 2.37,
+        "protein_g": 0.284,
+        "fat_g": 0.047,
+        "carbohydrate_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 4.74
+      }
+    },
+    {
+      "phrase": "an ounce of plain salted potato chips",
+      "fdc_id": 169677,
+      "sr_description": "Snacks, potato chips, plain, salted",
+      "category": "Snacks",
+      "portion": {
+        "id": 85333,
+        "amount": 1,
+        "modifier": "oz",
+        "gram_weight": 28.35
+      },
+      "grams": 28.35,
+      "per_100g": {
+        "energy_kcal": 532,
+        "protein_g": 6.39,
+        "fat_g": 33.98,
+        "carbohydrate_g": 53.83,
+        "fiber_g": 3.1,
+        "sugars_g": 0.33,
+        "sodium_mg": 527
+      },
+      "usda": {
+        "energy_kcal": 150.822,
+        "protein_g": 1.812,
+        "fat_g": 9.633,
+        "carbohydrate_g": 15.261,
+        "fiber_g": 0.879,
+        "sugars_g": 0.094,
+        "sodium_mg": 149.405
+      }
+    }
+  ]
+}

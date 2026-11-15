@@ -1,0 +1,676 @@
+{
+  "scored_at": "2026-11-13T00:22:43.801Z",
+  "foods": 20,
+  "rules": {
+    "median_ape": "median absolute percentage error over the answered values; Infinity where USDA says 0 and the answer does not",
+    "within": "share of all foods asked with an answer within ±10% / ±20% of USDA; a miss is not within",
+    "small_values": "USDA under 1 g (10 mg sodium): an answer within 0.5 g (5 mg) counts as within and as 0% error",
+    "misses": "api_error, empty, refusal and no_json count against every nutrient; missing_key against that nutrient",
+    "headline": "calories within ±10%"
+  },
+  "models": {
+    "gpt-6-astra": {
+      "family": "OpenAI GPT",
+      "id": "gpt-6-astra",
+      "provider": "openai",
+      "settings": "default: the API answers 400 'Only the default (1) value is supported' for temperature 0; default reasoning effort",
+      "response_models": [
+        "gpt-6-astra"
+      ],
+      "run_dates": [
+        "2026-11-13"
+      ],
+      "foods": 20,
+      "asked": 20,
+      "not_asked": 0,
+      "fully_parsed": 20,
+      "misses": {
+        "api_error": 0,
+        "empty": 0,
+        "refusal": 0,
+        "no_json": 0
+      },
+      "headline_calories_within_10_share": 0.85,
+      "nutrients": {
+        "energy_kcal": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 17,
+          "within_20": 20,
+          "within_10_share": 0.85,
+          "within_20_share": 1,
+          "small_value_rule_applied": 0
+        },
+        "protein_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 18,
+          "within_20": 19,
+          "within_10_share": 0.9,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 2
+        },
+        "fat_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 16,
+          "within_20": 18,
+          "within_10_share": 0.8,
+          "within_20_share": 0.9,
+          "small_value_rule_applied": 6
+        },
+        "carbohydrate_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 20,
+          "within_20": 20,
+          "within_10_share": 1,
+          "within_20_share": 1,
+          "small_value_rule_applied": 9
+        },
+        "fiber_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 19,
+          "within_20": 19,
+          "within_10_share": 0.95,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 12
+        },
+        "sugars_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 19,
+          "within_20": 19,
+          "within_10_share": 0.95,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 11
+        },
+        "sodium_mg": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0.94,
+          "median_ape_infinite": false,
+          "within_10": 13,
+          "within_20": 19,
+          "within_10_share": 0.65,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 3
+        }
+      },
+      "usage": {
+        "calls": 20,
+        "input_tokens": 1616,
+        "output_tokens": 5835,
+        "reasoning_tokens": 4664,
+        "reasoning_reported": true,
+        "cost_usd": 0.30791,
+        "cost_per_food_usd": 0.015396
+      },
+      "price": {
+        "input_per_mtok": 10,
+        "output_per_mtok": 50,
+        "source": "https://developers.openai.com/api/docs/pricing",
+        "checked": "2026-11-13"
+      }
+    },
+    "claude-opus-5-5": {
+      "family": "Anthropic Claude",
+      "id": "claude-opus-5-5",
+      "provider": "anthropic",
+      "settings": "default: the API answers 400 '`temperature` is deprecated for this model'; adaptive thinking (always on) at the default effort; max_tokens 8192",
+      "response_models": [
+        "claude-opus-5-5"
+      ],
+      "run_dates": [
+        "2026-11-13"
+      ],
+      "foods": 20,
+      "asked": 20,
+      "not_asked": 0,
+      "fully_parsed": 20,
+      "misses": {
+        "api_error": 0,
+        "empty": 0,
+        "refusal": 0,
+        "no_json": 0
+      },
+      "headline_calories_within_10_share": 0.85,
+      "nutrients": {
+        "energy_kcal": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 17,
+          "within_20": 18,
+          "within_10_share": 0.85,
+          "within_20_share": 0.9,
+          "small_value_rule_applied": 0
+        },
+        "protein_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 20,
+          "within_20": 20,
+          "within_10_share": 1,
+          "within_20_share": 1,
+          "small_value_rule_applied": 2
+        },
+        "fat_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 16,
+          "within_20": 18,
+          "within_10_share": 0.8,
+          "within_20_share": 0.9,
+          "small_value_rule_applied": 6
+        },
+        "carbohydrate_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 20,
+          "within_20": 20,
+          "within_10_share": 1,
+          "within_20_share": 1,
+          "small_value_rule_applied": 9
+        },
+        "fiber_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 19,
+          "within_20": 19,
+          "within_10_share": 0.95,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 12
+        },
+        "sugars_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 18,
+          "within_20": 19,
+          "within_10_share": 0.9,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 11
+        },
+        "sodium_mg": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 15,
+          "within_20": 18,
+          "within_10_share": 0.75,
+          "within_20_share": 0.9,
+          "small_value_rule_applied": 3
+        }
+      },
+      "usage": {
+        "calls": 20,
+        "input_tokens": 2501,
+        "output_tokens": 6332,
+        "reasoning_tokens": 4605,
+        "reasoning_reported": true,
+        "cost_usd": 0.136644,
+        "cost_per_food_usd": 0.006832
+      },
+      "price": {
+        "input_per_mtok": 4,
+        "output_per_mtok": 20,
+        "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+        "checked": "2026-11-13"
+      }
+    },
+    "gemini-4-carbon": {
+      "family": "Google Gemini",
+      "id": "gemini-4-carbon",
+      "provider": "gemini",
+      "settings": "temperature 0 (accepted); thinking at the default level",
+      "response_models": [
+        "gemini-4-carbon"
+      ],
+      "run_dates": [
+        "2026-11-13"
+      ],
+      "foods": 20,
+      "asked": 20,
+      "not_asked": 0,
+      "fully_parsed": 20,
+      "misses": {
+        "api_error": 0,
+        "empty": 0,
+        "refusal": 0,
+        "no_json": 0
+      },
+      "headline_calories_within_10_share": 0.95,
+      "nutrients": {
+        "energy_kcal": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 19,
+          "within_20": 20,
+          "within_10_share": 0.95,
+          "within_20_share": 1,
+          "small_value_rule_applied": 0
+        },
+        "protein_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 20,
+          "within_20": 20,
+          "within_10_share": 1,
+          "within_20_share": 1,
+          "small_value_rule_applied": 2
+        },
+        "fat_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 18,
+          "within_20": 19,
+          "within_10_share": 0.9,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 6
+        },
+        "carbohydrate_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 20,
+          "within_20": 20,
+          "within_10_share": 1,
+          "within_20_share": 1,
+          "small_value_rule_applied": 9
+        },
+        "fiber_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 18,
+          "within_20": 18,
+          "within_10_share": 0.9,
+          "within_20_share": 0.9,
+          "small_value_rule_applied": 12
+        },
+        "sugars_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 18,
+          "within_20": 19,
+          "within_10_share": 0.9,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 11
+        },
+        "sodium_mg": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 5.4,
+          "median_ape_infinite": false,
+          "within_10": 15,
+          "within_20": 17,
+          "within_10_share": 0.75,
+          "within_20_share": 0.85,
+          "small_value_rule_applied": 3
+        }
+      },
+      "usage": {
+        "calls": 20,
+        "input_tokens": 2257,
+        "output_tokens": 17331,
+        "reasoning_tokens": 15537,
+        "reasoning_reported": true,
+        "cost_usd": 0.177824,
+        "cost_per_food_usd": 0.008891
+      },
+      "price": {
+        "input_per_mtok": 2,
+        "output_per_mtok": 10,
+        "changes": [
+          {
+            "from": "2026-12-01",
+            "input_per_mtok": 4,
+            "output_per_mtok": 20
+          }
+        ],
+        "note": "Output includes thinking tokens. $2/$10 through 2026-11-30, $4/$20 from 2026-12-01.",
+        "source": "https://ai.google.dev/gemini-api/docs/pricing",
+        "checked": "2026-11-13"
+      }
+    },
+    "muse-spark-open": {
+      "family": "Meta (Muse; Together AI serves no Llama model serverless any more)",
+      "id": "meta-models/Muse-Spark-Open-816B-A42B",
+      "provider": "together",
+      "settings": "temperature 0 (accepted); reasoning at the default (on)",
+      "response_models": [
+        "meta-models/Muse-Spark-Open-816B-A42B"
+      ],
+      "run_dates": [
+        "2026-11-13"
+      ],
+      "foods": 20,
+      "asked": 20,
+      "not_asked": 0,
+      "fully_parsed": 19,
+      "misses": {
+        "api_error": 0,
+        "empty": 0,
+        "refusal": 1,
+        "no_json": 0
+      },
+      "headline_calories_within_10_share": 0.7,
+      "nutrients": {
+        "energy_kcal": {
+          "foods": 20,
+          "answered": 19,
+          "misses": 1,
+          "missing_key": 0,
+          "median_ape_pct": 1.2,
+          "median_ape_infinite": false,
+          "within_10": 14,
+          "within_20": 16,
+          "within_10_share": 0.7,
+          "within_20_share": 0.8,
+          "small_value_rule_applied": 0
+        },
+        "protein_g": {
+          "foods": 20,
+          "answered": 19,
+          "misses": 1,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 16,
+          "within_20": 19,
+          "within_10_share": 0.8,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 2
+        },
+        "fat_g": {
+          "foods": 20,
+          "answered": 19,
+          "misses": 1,
+          "missing_key": 0,
+          "median_ape_pct": 1.64,
+          "median_ape_infinite": false,
+          "within_10": 11,
+          "within_20": 12,
+          "within_10_share": 0.55,
+          "within_20_share": 0.6,
+          "small_value_rule_applied": 5
+        },
+        "carbohydrate_g": {
+          "foods": 20,
+          "answered": 19,
+          "misses": 1,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 18,
+          "within_20": 19,
+          "within_10_share": 0.9,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 9
+        },
+        "fiber_g": {
+          "foods": 20,
+          "answered": 19,
+          "misses": 1,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 17,
+          "within_20": 18,
+          "within_10_share": 0.85,
+          "within_20_share": 0.9,
+          "small_value_rule_applied": 12
+        },
+        "sugars_g": {
+          "foods": 20,
+          "answered": 19,
+          "misses": 1,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 17,
+          "within_20": 17,
+          "within_10_share": 0.85,
+          "within_20_share": 0.85,
+          "small_value_rule_applied": 10
+        },
+        "sodium_mg": {
+          "foods": 20,
+          "answered": 19,
+          "misses": 1,
+          "missing_key": 0,
+          "median_ape_pct": 3.85,
+          "median_ape_infinite": false,
+          "within_10": 11,
+          "within_20": 12,
+          "within_10_share": 0.55,
+          "within_20_share": 0.6,
+          "small_value_rule_applied": 3
+        }
+      },
+      "usage": {
+        "calls": 20,
+        "input_tokens": 4373,
+        "output_tokens": 43105,
+        "reasoning_tokens": 41746,
+        "reasoning_reported": true,
+        "cost_usd": 0.188662,
+        "cost_per_food_usd": 0.009433
+      },
+      "price": {
+        "input_per_mtok": 1.25,
+        "output_per_mtok": 4.25,
+        "source": "https://www.together.ai/pricing",
+        "checked": "2026-11-13"
+      }
+    },
+    "deepseek-v4-pro": {
+      "family": "DeepSeek",
+      "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "provider": "together",
+      "settings": "temperature 0 (accepted); reasoning at the default (on)",
+      "response_models": [
+        "deepseek-ai/DeepSeek-V4-Pro-0813"
+      ],
+      "run_dates": [
+        "2026-11-13"
+      ],
+      "foods": 20,
+      "asked": 20,
+      "not_asked": 0,
+      "fully_parsed": 20,
+      "misses": {
+        "api_error": 0,
+        "empty": 0,
+        "refusal": 0,
+        "no_json": 0
+      },
+      "headline_calories_within_10_share": 0.9,
+      "nutrients": {
+        "energy_kcal": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 18,
+          "within_20": 18,
+          "within_10_share": 0.9,
+          "within_20_share": 0.9,
+          "small_value_rule_applied": 0
+        },
+        "protein_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 20,
+          "within_20": 20,
+          "within_10_share": 1,
+          "within_20_share": 1,
+          "small_value_rule_applied": 2
+        },
+        "fat_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0.54,
+          "median_ape_infinite": false,
+          "within_10": 14,
+          "within_20": 16,
+          "within_10_share": 0.7,
+          "within_20_share": 0.8,
+          "small_value_rule_applied": 5
+        },
+        "carbohydrate_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 19,
+          "within_20": 20,
+          "within_10_share": 0.95,
+          "within_20_share": 1,
+          "small_value_rule_applied": 9
+        },
+        "fiber_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 19,
+          "within_20": 19,
+          "within_10_share": 0.95,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 12
+        },
+        "sugars_g": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 0,
+          "median_ape_infinite": false,
+          "within_10": 19,
+          "within_20": 19,
+          "within_10_share": 0.95,
+          "within_20_share": 0.95,
+          "small_value_rule_applied": 11
+        },
+        "sodium_mg": {
+          "foods": 20,
+          "answered": 20,
+          "misses": 0,
+          "missing_key": 0,
+          "median_ape_pct": 1.52,
+          "median_ape_infinite": false,
+          "within_10": 14,
+          "within_20": 16,
+          "within_10_share": 0.7,
+          "within_20_share": 0.8,
+          "small_value_rule_applied": 3
+        }
+      },
+      "usage": {
+        "calls": 20,
+        "input_tokens": 1574,
+        "output_tokens": 13591,
+        "reasoning_tokens": 12271,
+        "reasoning_reported": true,
+        "cost_usd": 0.055898,
+        "cost_per_food_usd": 0.002795
+      },
+      "price": {
+        "input_per_mtok": 1.32,
+        "output_per_mtok": 3.96,
+        "source": "https://www.together.ai/pricing",
+        "checked": "2026-11-13"
+      }
+    }
+  }
+}
